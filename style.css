@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+/* css초기화 : 브라우저가 제공하는 기본값을 초기화해야 각 영역에서의 margin padding 설정값이 실행된다 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Jua", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Header */
+header {
+    /* 헤더 네비게이션 고정 */
+    position: fixed;
+    width: 100%;
+    /* 
+    기본 값 
+    position: relative;
+    */
+    display: flex;
+    /*  내가 설정한 n개의 content를 화면을 기준으로 동일하게 나눈다 (ex: 두개면 양끝으로 보냄) */
+    justify-content: space-between;
+    /* header에서 수직정렬로 가운데에 배치된다 */
+    align-items: center;
+    /* 상 우 하 좌 순 */
+    padding: 0px 0px 0px 0px;
+    /* 위의 상우하좌 순을 동일한 px로 지정한다 */
+    padding: 0px;
+    /* 상하 좌우 순 */
+    padding: 0px 0px;
+    /* 위의 상하 좌우 순을 동일한 px로 지정한다 */
+    padding: 0px;
+    height: 100px;
+}
+/* 전역, 광역 우선순위 가장 낮음 */
+header img {
+    width: 500px;
+}
+/* 자식특정  */
+header > img {
+    width: 200px;
+}
+/* class 참조 */
+header .logo {
+    width: 400px;
+}
+/* id 참조 */
+header #logo1 {
+    width: 200px;
+}
+
+/* nav */
+nav {
+    padding: 50px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    color: lemonchiffon;
+}
+/* nav a{
+} */
+main img {
+    width: 300px;
+}
+/* main section <h2> */
+main section#title {
+    display: flex;
+    justify-content: space-between;
+    background-color: skyblue;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+main section#title h2 {
+    width: 430px;
+    font-size: 64px;
+    font-weight: 500;
+    margin-left: 30px;
+    color: lemonchiffon;
+}
+main section div#background {
+    width: 55%;
+    height: 100%;
+    margin-right: 10px;
+    position: relative;
+}
+main section div#background #haribo-photo1 {
+    border-top-left-radius: 120%;
+    border-top-right-radius: 120%;
+    width: calc(100% - 50px);
+    margin-right: 50px;
+    height: calc(100% - 70px);
+    margin-top: 70px;
+}
+
+main section div#background #haribo-photo2 {
+    position: absolute;
+    bottom: 0%;
+    left: 62%;
+    height: 75%;
+    width: 45%;
+}
+
+main section div#background #haribo-photo3 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 70%;
+}
+
+main section div#middle #haribo-jelly2 {
+    background-color: red;
+}
+
+main section div#middle #haribo-jelly3 {
+    background-color: red;
+}
