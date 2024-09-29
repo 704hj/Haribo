@@ -191,7 +191,7 @@ main section#title {
     justify-content: space-between;
     background-color: skyblue;
     align-items: center;
-    height: 90vh;
+    height: 110vh;
     width: 100vw;
 }
 main section#title h2 {
@@ -220,7 +220,7 @@ main section div#background #haribo-photo2 {
     position: absolute;
     bottom: 0%;
     left: 62%;
-    height: 75%;
+    height: 65%;
     width: 45%;
 }
 
@@ -245,17 +245,41 @@ main section#middle div img {
 }
 main section#bottom {
     display: flex;
-    justify-content: space-between;
+    background-color: palevioletred;
+    margin-top: 25%;
+    height: 90vh;
 }
-main section#bottom #gummy {
-    padding: 150px 150px 150px 30px;
-    width: 40%;
-    height: 40%;
+
+main section#bottom img {
+    background: green;
+    width: 50%;
 }
+
+main section nav {
+    background: #78be21;
+    width: 50%;
+    /* 세로로 배치 */
+    flex-direction: column;
+}
+
+main section#bottom nav h1 {
+    font-size: 100px;
+    color: rgb(239, 255, 20);
+    text-shadow: 3px 3px 3px white;
+}
+
 main section#bottom nav h2 {
-    background-color: blue;
+    font-size: 55px;
+    text-align: center;
+    padding: 50px 0 85px 0;
 }
 
 main section#bottom nav h5 {
-    background-color: red;
+    font-size: 30px;
+    padding: 0 0 60px 60px;
+}
+
+footer {
+    height: 20vh;
+    padding: 25px 0 0 50px;
 }
